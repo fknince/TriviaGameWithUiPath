@@ -1,0 +1,102 @@
+﻿{
+  "Metadata": {
+    "Id": "2e8c1a52-2938-4627-adbf-4421ae1ca436",
+    "Kind": "FormIo"
+  },
+  "DesignProperties": {
+    "Title": "StartForm",
+    "Theme": "Flatly",
+    "ShowInTaskbar": true,
+    "ShowMargin": true,
+    "CustomStyle": ""
+  },
+  "Data": {
+    "components": [
+      {
+        "collapsible": false,
+        "hideLabel": true,
+        "key": "panel",
+        "type": "panel",
+        "label": "Panel",
+        "input": false,
+        "tableView": false,
+        "components": [
+          {
+            "label": "Soru Adeti",
+            "widget": "choicesjs",
+            "tableView": true,
+            "data": {
+              "values": [
+                {
+                  "label": "5",
+                  "value": "5"
+                },
+                {
+                  "label": "10",
+                  "value": "10"
+                },
+                {
+                  "label": "15",
+                  "value": "15"
+                },
+                {
+                  "label": "20",
+                  "value": "20"
+                }
+              ]
+            },
+            "validate": {
+              "required": true
+            },
+            "key": "soruAdeti",
+            "type": "select",
+            "input": true
+          },
+          {
+            "label": "Soru Kategorisi",
+            "widget": "choicesjs",
+            "tableView": true,
+            "data": {
+              "values": [
+                {
+                  "label": "Spor",
+                  "value": "spor"
+                },
+                {
+                  "label": "Müzik",
+                  "value": "müzik"
+                },
+                {
+                  "label": "Sanat",
+                  "value": "sanat"
+                },
+                {
+                  "label": "Teknoloji",
+                  "value": "teknoloji"
+                }
+              ]
+            },
+            "validate": {
+              "required": true
+            },
+            "key": "soruKategorisi",
+            "type": "select",
+            "input": true
+          }
+        ]
+      },
+      {
+        "label": "Başlat",
+        "showValidations": false,
+        "theme": "secondary",
+        "block": true,
+        "disableOnInvalid": true,
+        "tableView": false,
+        "key": "submit",
+        "type": "button",
+        "saveOnEnter": false,
+        "input": true
+      }
+    ]
+  }
+}
